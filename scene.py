@@ -97,7 +97,7 @@ class MobjectExample(Scene):
         p2 = [ 1,-1, 0]
         p3 = [ 1, 1, 0]
         p4 = [-1, 1, 0]
-        a  = Line(p1,p2).append_points(Line(p2,p3).points)
+        a  = Line(p1,p2).append_points(Line(p2,p3).points).append_points(Line(p3,p4).points)
 
         point_start  = a.get_start()
         point_end    = a.get_end()
