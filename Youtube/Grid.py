@@ -1,5 +1,7 @@
 from manim import *
 
+# Source of the code, this youtube video : https://www.youtube.com/watch?v=jFqYq9quBds&list=PLWOlLjdyZm2NQD1YZmEPB0dwbd0yKINAT&index=2
+
 class FittingObjects(Scene):
     def construct(self):
         # Afficher le plan
