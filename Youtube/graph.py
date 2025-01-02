@@ -19,11 +19,11 @@ class ExampleFunctionGraph(Scene):
         b = ln_graph.get_point_from_function(t=2)
 
         self.add(axes, labels)
-        self.play(Create(exp_graph))
+        self.play(Create(exp_graph), run_time=3)
         self.play(Create(Dot(a)))
         self.wait(1)
 
-        self.play(Transform(exp_graph,ln_graph), run_time=2)
+        self.play(Transform(exp_graph,ln_graph), run_time=3)
         self.play(Transform(Dot(a),Dot(b)))
 
         self.play(Create(axes.get_vertical_line(b)))
